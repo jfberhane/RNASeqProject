@@ -79,8 +79,8 @@ You should branch your personal copy of the repo for the lab and then merge it i
 
 ### Tasks:
 
-- [ ]  Complete the [Galaxy Tutorial](1-Galaxy.md) using Salmon pseudoalignment
-- [ ]  Complete the [SARTools Tutorial](2-SARTools.md) using DESeq2 differential expression analysis
+- [X]  Complete the [Galaxy Tutorial](1-Galaxy.md) using Salmon pseudoalignment
+- [X]  Complete the [SARTools Tutorial](2-SARTools.md) using DESeq2 differential expression analysis
 - [ ]  Repeat the SARTools analysis incorporating batch correction
 - [ ]  Compare the results of the SARTools analysis at the gene and transcript level
 - [ ]  Complete a different analysis pipeline and compare the results
@@ -106,3 +106,5 @@ Biol364_664roster$Pipeline <- c("kallisto->DESeq2",
 table(Biol364_664roster$Pipeline)
 kable(Biol364_664roster)
 ```
+
+My pipeline is kallisto-edgeR.
