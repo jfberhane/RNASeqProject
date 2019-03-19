@@ -44,9 +44,18 @@ write_tsv(genetable, path="genetable.tsv")
 transcriptfilelist <- list.files(path="~/Documents/RNASeqProject/SARTools.edgeR", pattern="*.transcripts.tsv", full.names=T)
 transcriptfiles <- lapply(transcriptfilelist, read_tsv)
 
+
+# Use grep to change the file names into shorter sample names BUT FOR TRANSCRIPTS
+samplenames <- gsub("SARTools/S2_DRSC_CG8144_", "", transcriptfilelist)
+samplenames <- gsub("SARTools/S2_DRSC_","", samplenames)
+samplenames <- gsub(".transcripts.tsv", "", samplenames)
+samplenames <- gsub("-","_", samplenames) # DEBrowser doesn't like -
+samplenames
+
+
 transcriptfiles %>%
   bind_cols() %>%
-  select(Name, starts_with("NumReads")) -> transcripttable
+  select(target_id, starts_with("est_counts")) -> transcripttable
 colnames(transcripttable)[2:7] <- as.list(samplenames)
 
 head(transcripttable)
