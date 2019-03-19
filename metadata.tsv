@@ -1,0 +1,7 @@
+sample	batch	condition
+S2_DRSC_Untreated_1	Single	Untreated
+S2_DRSC_Untreated_3	Paired	Untreated
+S2_DRSC_Untreated_4	Paired	Untreated
+S2_DRSC_CG8144_RNAi_1	Single	RNAi
+S2_DRSC_CG8144_RNAi_3	Paired	RNAi
+S2_DRSC_CG8144_RNAi_4	Paired	RNAi
