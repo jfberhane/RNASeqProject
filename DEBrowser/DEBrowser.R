@@ -90,3 +90,4 @@ startDEBrowser()
 #2 Filter and batch correct as above
 #3 Run the appropriate DE Analysis 
 #4 Go to the Tables and sort by log10padjust search for FBgn0261552 - this is the *pasilla* gene
+

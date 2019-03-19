@@ -2,4 +2,3 @@ This file will be used to test Branching and Pull Requests.
 
 This change is being made on the test-branch.
 
-Hello this is a test from the jfberhane fork
